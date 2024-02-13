@@ -1,0 +1,10 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
+  overflow: auto;
+}
+
+.card {
+  max-width: 200px;
+  width: 100%;
+}

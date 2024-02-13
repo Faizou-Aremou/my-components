@@ -1,16 +1,9 @@
 import { NgModule } from '@angular/core';
-import { UiControlsComponent } from './ui-controls.component';
-
-
+import { CardListComponent } from './card-list/card-list.component';
 
 @NgModule({
-  declarations: [
-    UiControlsComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    UiControlsComponent
-  ]
+  declarations: [],
+  imports: [CardListComponent],
+  exports: [CardListComponent],
 })
-export class UiControlsModule { }
+export class UiControlsModule {}

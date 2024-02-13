@@ -1,0 +1,20 @@
+<div
+  cdkDropListOrientation="horizontal"
+  cdkDropList
+  (cdkDropListDropped)="sortCards($event)"
+  class="card-list"
+>
+  @for(card of cards; track card){
+  <div cdkDrag class="card m-4">
+    <header class="card__card-header card-header">
+      <p class="card-header__title">{{ card.title }}</p>
+    </header>
+    <div class="card__card-content card-content">
+      <div class="card-content__content">{{ card.description }}</div>
+    </div>
+    <footer class="card__card-footer card-footer">
+      <a [href]="card.link" class="card-footer-item"> View on Wikipedia </a>
+    </footer>
+  </div>
+  }
+</div>
