@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Output, input } from '@angular/core';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @Component({
@@ -9,6 +9,9 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
   styleUrl: './copy-button.component.scss',
 })
 export class CopyButtonComponent {
-  @Input() data = '';
+  data = input.required<string>();
   @Output() copied = new EventEmitter<void>();
+  onCopy(): void {
+    this.copied.next();
+  }
 }

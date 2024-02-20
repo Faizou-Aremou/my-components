@@ -1,11 +1,17 @@
 {
-  "name": "ui-controls",
-  "version": "0.0.1",
+  "name": "@web-times-team/ui-controls",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/cdk": "^16.0.3",
     "bulma": "^0.9.4"
+  },
+  "repository": {
+    "url": "https://github.com/Faizou-Aremou/my-components.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "tslib": "^2.3.0"
